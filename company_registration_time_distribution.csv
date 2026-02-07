@@ -1,0 +1,56 @@
+Time_Period_Type,Time_Bin,Count,Percentage,Total_Records
+Created → Submission,Same day,0,0.0,46893
+Created → Submission,1 day,3701,7.892435971253706,46893
+Created → Submission,2-3 days,4146,8.841404900518201,46893
+Created → Submission,4-7 days,5748,12.257693045870385,46893
+Created → Submission,1-2 weeks,5975,12.741773825517669,46893
+Created → Submission,2-4 weeks,6538,13.942379459620838,46893
+Created → Submission,1-2 months,4241,9.043993773057812,46893
+Created → Submission,2-3 months,2284,4.870662998741817,46893
+Created → Submission,3-6 months,3882,8.27842108630286,46893
+Created → Submission,6-12 months,5671,12.09348943339091,46893
+Created → Submission,1+ year,4707,10.0377455057258,46893
+Created → Approved,Same day,0,0.0,46936
+Created → Approved,1 day,2547,5.426538264871314,46936
+Created → Approved,2-3 days,3443,7.335520709050622,46936
+Created → Approved,4-7 days,5464,11.64138401227203,46936
+Created → Approved,1-2 weeks,6466,13.776205897392193,46936
+Created → Approved,2-4 weeks,7357,15.674535537753536,46936
+Created → Approved,1-2 months,4801,10.228822226009886,46936
+Created → Approved,2-3 months,2437,5.192176580876087,46936
+Created → Approved,3-6 months,4024,8.573376512698141,46936
+Created → Approved,6-12 months,5689,12.12076018408045,46936
+Created → Approved,1+ year,4708,10.03068007499574,46936
+Submission → Approved,Same day,11,0.02345065768435415,46907
+Submission → Approved,1 day,32584,69.4651118169996,46907
+Submission → Approved,2-3 days,6505,13.867866203338522,46907
+Submission → Approved,4-7 days,5347,11.399151512567421,46907
+Submission → Approved,1-2 weeks,1972,4.204063359413307,46907
+Submission → Approved,2-4 weeks,423,0.9017843818619822,46907
+Submission → Approved,1-2 months,51,0.10872577653655105,46907
+Submission → Approved,2-3 months,9,0.019186901741744304,46907
+Submission → Approved,3-6 months,5,0.010659389856524612,46907
+Submission → Approved,6-12 months,0,0.0,46907
+Submission → Approved,1+ year,0,0.0,46907
+Approved → Registration,Same day,14143,99.77425044091711,14175
+Approved → Registration,1 day,24,0.16931216931216933,14175
+Approved → Registration,2-3 days,4,0.02821869488536155,14175
+Approved → Registration,4-7 days,2,0.014109347442680775,14175
+Approved → Registration,1-2 weeks,1,0.007054673721340388,14175
+Approved → Registration,2-4 weeks,0,0.0,14175
+Approved → Registration,1-2 months,0,0.0,14175
+Approved → Registration,2-3 months,0,0.0,14175
+Approved → Registration,3-6 months,0,0.0,14175
+Approved → Registration,6-12 months,0,0.0,14175
+Approved → Registration,1+ year,1,0.007054673721340388,14175
+Created → Registration (Total),Same day,14139,99.77418671935642,14171
+Created → Registration (Total),1 day,3,0.021169995060334484,14171
+Created → Registration (Total),2-3 days,2,0.014113330040222992,14171
+Created → Registration (Total),4-7 days,2,0.014113330040222992,14171
+Created → Registration (Total),1-2 weeks,7,0.04939665514078047,14171
+Created → Registration (Total),2-4 weeks,8,0.05645332016089197,14171
+Created → Registration (Total),1-2 months,5,0.035283325100557476,14171
+Created → Registration (Total),2-3 months,2,0.014113330040222992,14171
+Created → Registration (Total),3-6 months,1,0.007056665020111496,14171
+Created → Registration (Total),6-12 months,1,0.007056665020111496,14171
+Created → Registration (Total),1+ year,1,0.007056665020111496,14171

@@ -1,0 +1,384 @@
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.3.5 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/Users/hemnarayandaschaudhary/OCR/explore_workflow_simple.py", line 1, in <module>
+    import pandas as pd
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 49, in <module>
+    from pandas.core.api import (
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/api.py", line 28, in <module>
+    from pandas.core.arrays import Categorical
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/__init__.py", line 1, in <module>
+    from pandas.core.arrays.arrow import ArrowExtensionArray
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/arrow/__init__.py", line 5, in <module>
+    from pandas.core.arrays.arrow.array import ArrowExtensionArray
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/arrow/array.py", line 53, in <module>
+    from pandas.core import (
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/ops/__init__.py", line 8, in <module>
+    from pandas.core.ops.array_ops import (
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/ops/array_ops.py", line 56, in <module>
+    from pandas.core.computation import expressions
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/computation/expressions.py", line 21, in <module>
+    from pandas.core.computation.check import NUMEXPR_INSTALLED
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/computation/check.py", line 5, in <module>
+    ne = import_optional_dependency("numexpr", errors="warn")
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/compat/_optional.py", line 135, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "/opt/anaconda3/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/opt/anaconda3/lib/python3.12/site-packages/numexpr/__init__.py", line 24, in <module>
+    from numexpr.interpreter import MAX_THREADS, use_vml, __BLOCK_SIZE1__
+AttributeError: _ARRAY_API not found
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.3.5 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/Users/hemnarayandaschaudhary/OCR/explore_workflow_simple.py", line 1, in <module>
+    import pandas as pd
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 49, in <module>
+    from pandas.core.api import (
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/api.py", line 28, in <module>
+    from pandas.core.arrays import Categorical
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/__init__.py", line 1, in <module>
+    from pandas.core.arrays.arrow import ArrowExtensionArray
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/arrow/__init__.py", line 5, in <module>
+    from pandas.core.arrays.arrow.array import ArrowExtensionArray
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/arrow/array.py", line 67, in <module>
+    from pandas.core.arrays.masked import BaseMaskedArray
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/masked.py", line 61, in <module>
+    from pandas.core import (
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/nanops.py", line 52, in <module>
+    bn = import_optional_dependency("bottleneck", errors="warn")
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/compat/_optional.py", line 135, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "/opt/anaconda3/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/opt/anaconda3/lib/python3.12/site-packages/bottleneck/__init__.py", line 7, in <module>
+    from .move import (move_argmax, move_argmin, move_max, move_mean, move_median,
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.12/site-packages/numpy/core/_multiarray_umath.py", line 46, in __getattr__
+    raise ImportError(msg)
+ImportError: 
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.3.5 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+
+Reading CSV file...
+Total rows: 73,211
+Total columns: 14
+
+================================================================================
+
+Column names:
+  - id
+  - action_remarks
+  - auth_level
+  - auth_status
+  - table_data_id
+  - user_id
+  - workflow_date
+  - industryid
+  - menu_id
+  - roleid
+  - sectionid
+  - menu_name
+  - industry_name
+  - industry_category_name
+
+================================================================================
+
+1. WORKFLOW/PROCESS TYPES (menu_name):
+Total unique processes: 18
+
+Top 10 processes by record count:
+   1. Visa Recommendation                           - 46,301 records (63.2%)
+   2. Industry Registration                         - 10,573 records (14.4%)
+   3. New Investment                                -  9,596 records (13.1%)
+   4. Industry Link                                 -  2,509 records (3.4%)
+   5. Facility Request                              -  1,436 records (2.0%)
+   6. Technology Transfer Agreement                 -  1,424 records (1.9%)
+   7. Extension of Operation Period                 -    467 records (0.6%)
+   8. Post Registration                             -    434 records (0.6%)
+   9. Unit Industry Registration                    -    186 records (0.3%)
+  10. Value Addition Request                        -    172 records (0.2%)
+
+================================================================================
+
+2. AUTHORITY LEVELS (auth_level):
+Unique auth_levels: [np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(10), np.int64(11), np.int64(12), np.int64(13), np.int64(14), np.int64(15), np.int64(16), np.int64(17), np.int64(18), np.int64(19), np.int64(20), np.int64(21), np.int64(22)]
+Range: 1 to 22
+
+Distribution:
+  Level  1: 15,393 records (21.0%)
+  Level  2: 13,446 records (18.4%)
+  Level  3: 14,271 records (19.5%)
+  Level  4: 11,163 records (15.2%)
+  Level  5:  9,022 records (12.3%)
+  Level  6:  3,720 records (5.1%)
+  Level  7:  2,711 records (3.7%)
+  Level  8:  1,400 records (1.9%)
+  Level  9:    853 records (1.2%)
+  Level 10:    516 records (0.7%)
+  Level 11:    295 records (0.4%)
+  Level 12:    177 records (0.2%)
+  Level 13:     98 records (0.1%)
+  Level 14:     59 records (0.1%)
+  Level 15:     37 records (0.1%)
+  Level 16:     24 records (0.0%)
+  Level 17:     13 records (0.0%)
+  Level 18:      6 records (0.0%)
+  Level 19:      3 records (0.0%)
+  Level 20:      2 records (0.0%)
+  Level 21:      1 records (0.0%)
+  Level 22:      1 records (0.0%)
+
+================================================================================
+
+3. AUTHORITY STATUS (auth_status):
+Unique auth_status values: [np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(7), np.int64(8)]
+
+Distribution:
+  Status  0 (Submitted                ):  1,615 records (2.2%)
+  Status  1 (Approved                 ): 61,763 records (84.4%)
+  Status  2 (Unknown-2                ):    336 records (0.5%)
+  Status  3 (Sent back for review     ):  9,315 records (12.7%)
+  Status  4 (Unknown-4                ):     66 records (0.1%)
+  Status  5 (Unknown-5                ):     97 records (0.1%)
+  Status  7 (Unknown-7                ):      1 records (0.0%)
+  Status  8 (Unknown-8                ):     18 records (0.0%)
+
+================================================================================
+
+4. INDUSTRY CATEGORIES:
+Unique categories: 9
+
+Distribution:
+  1. TOURISM                        - 25,876 records (35.3%)
+  2. SERVICE                        - 18,635 records (25.5%)
+  3. ICT BASED                      - 10,605 records (14.5%)
+  4. MANUFACTURING                  -  8,031 records (11.0%)
+  5. ENERGY BASED                   -  5,197 records (7.1%)
+  6. INFRASTRUCTURE                 -  2,571 records (3.5%)
+  7. AGRO AND FORESTRY BASED        -  2,057 records (2.8%)
+  8. MINERAL                        -    234 records (0.3%)
+  9. OTHER                          -      5 records (0.0%)
+
+================================================================================
+
+5. ROLES (roleid):
+Unique roles: 11
+
+Top 5 roles by record count:
+  Role  1:  1,668 records (2.3%)
+  Role  7:      1 records (0.0%)
+  Role  8:     18 records (0.0%)
+  Role 27:    755 records (1.0%)
+  Role 28: 15,521 records (21.2%)
+
+================================================================================
+
+6. DATE/TIME ANALYSIS:
+Parsing dates...
+Successfully parsed: 71,619 dates (97.8%)
+Date range: 2022-07-03 00:00:00 to 2026-01-27 13:53:00
+
+Records by year:
+  2022:  6,014 records
+  2023: 17,881 records
+  2024: 21,183 records
+  2025: 24,953 records
+  2026:  1,588 records
+
+================================================================================
+
+7. WORKFLOW PROGRESSION ANALYSIS:
+Analyzing applications...
+Total unique applications: 11,324
+
+Workflow steps per application:
+  Average: 6.47 steps
+  Median:  6 steps
+  Min:     1 steps
+  Max:     32 steps
+
+Distribution of steps (top 15):
+   1 steps:   863 applications (7.6%)
+   2 steps:   292 applications (2.6%)
+   3 steps:   416 applications (3.7%)
+   4 steps:   648 applications (5.7%)
+   5 steps: 3,078 applications (27.2%)
+   6 steps: 1,742 applications (15.4%)
+   7 steps: 1,141 applications (10.1%)
+   8 steps:   902 applications (8.0%)
+   9 steps:   574 applications (5.1%)
+  10 steps:   428 applications (3.8%)
+  11 steps:   312 applications (2.8%)
+  12 steps:   223 applications (2.0%)
+  13 steps:   146 applications (1.3%)
+  14 steps:   137 applications (1.2%)
+  15 steps:    99 applications (0.9%)
+
+================================================================================
+
+8. SAMPLE WORKFLOW PROGRESSIONS:
+Showing 5 example applications:
+
+Application ID: 37
+Industry: Grand Central Hotel Pvt. Ltd.
+Process: Technology Transfer Agreement
+Category: TOURISM
+Total steps: 3
+
+Progression:
+  22/11/2023 10:35     | Auth Level:  1 | Approved                  | Role: 32
+  24/11/2023 10:58     | Auth Level:  2 | Unknown-2                 | Role: 34
+  N/A                  | Auth Level:  1 | Submitted                 | Role: 32
+--------------------------------------------------------------------------------
+
+Application ID: 15
+Industry: Pioneer Solutions Nepal Pvt.Ltd
+Process: Technology Transfer Agreement
+Category: SERVICE
+Total steps: 5
+
+Progression:
+  18/08/2023 10:29     | Auth Level:  1 | Approved                  | Role: 32
+  18/08/2023 12:11     | Auth Level:  2 | Approved                  | Role: 34
+  22/08/2023 13:18     | Auth Level:  3 | Sent back for review      | Role: 34
+  19/09/2023 11:17     | Auth Level:  3 | Sent back for review      | Role: 34
+  N/A                  | Auth Level:  1 | Submitted                 | Role: 32
+--------------------------------------------------------------------------------
+
+Application ID: 5
+Industry: Nova Genetica
+Process: Industry Data Update
+Category: INFRASTRUCTURE
+Total steps: 7
+
+Progression:
+  21/04/2023 14:32     | Auth Level:  1 | Submitted                 | Role: 8
+  04/08/2023 10:24     | Auth Level:  1 | Approved                  | Role: 32
+  07/08/2023 12:28     | Auth Level:  2 | Sent back for review      | Role: 34
+  07/08/2023 20:18     | Auth Level:  2 | Sent back for review      | Role: 34
+  10/08/2023 12:31     | Auth Level:  2 | Sent back for review      | Role: 34
+  11/08/2023 11:43     | Auth Level:  2 | Sent back for review      | Role: 34
+  14/08/2023 11:49     | Auth Level:  2 | Unknown-2                 | Role: 34
+--------------------------------------------------------------------------------
+
+Application ID: 12
+Industry: CG Cement Industries Palpa Pvt.Ltd
+Process: Technology Transfer Agreement
+Category: INFRASTRUCTURE
+Total steps: 10
+
+Progression:
+  17/08/2023 14:24     | Auth Level:  1 | Approved                  | Role: 32
+  20/08/2023 11:47     | Auth Level:  2 | Sent back for review      | Role: 34
+  29/08/2023 15:45     | Auth Level:  2 | Sent back for review      | Role: 34
+  29/08/2023 15:53     | Auth Level:  2 | Approved                  | Role: 34
+  29/08/2023 16:08     | Auth Level:  3 | Approved                  | Role: 34
+  29/08/2023 16:55     | Auth Level:  4 | Approved                  | Role: 32
+  03/09/2023 16:54     | Auth Level:  5 | Approved                  | Role: 27
+  04/09/2023 13:12     | Auth Level:  6 | Sent back for review      | Role: 34
+  04/09/2023 13:26     | Auth Level:  6 | Approved                  | Role: 34
+  04/09/2023 13:34     | Auth Level:  7 | Approved                  | Role: 27
+--------------------------------------------------------------------------------
+
+Application ID: 30
+Industry: The Organic Village Pvt.Ltd
+Process: Extension of Operation Period
+Category: SERVICE
+Total steps: 15
+
+Progression:
+  11/04/2023 12:25     | Auth Level:  1 | Approved                  | Role: 32
+  11/04/2023 12:47     | Auth Level:  2 | Approved                  | Role: 34
+  02/07/2023 15:19     | Auth Level:  3 | Sent back for review      | Role: 28
+  16/10/2023 10:28     | Auth Level:  1 | Approved                  | Role: 32
+  16/10/2023 11:59     | Auth Level:  2 | Sent back for review      | Role: 34
+  16/10/2023 12:17     | Auth Level:  2 | Sent back for review      | Role: 34
+  17/10/2023 14:06     | Auth Level:  2 | Approved                  | Role: 34
+  01/11/2023 14:51     | Auth Level:  3 | Approved                  | Role: 34
+  01/11/2023 14:53     | Auth Level:  4 | Approved                  | Role: 34
+  02/11/2023 10:09     | Auth Level:  5 | Approved                  | Role: 32
+  03/11/2023 10:50     | Auth Level:  6 | Approved                  | Role: 34
+  03/11/2023 11:00     | Auth Level:  7 | Approved                  | Role: 32
+  05/11/2023 13:54     | Auth Level:  8 | Approved                  | Role: 32
+  05/11/2023 13:57     | Auth Level:  9 | Approved                  | Role: 34
+  05/11/2023 14:42     | Auth Level: 10 | Approved                  | Role: 32
+--------------------------------------------------------------------------------
+
+================================================================================
+
+9. AUTHORITY LEVEL TRANSITIONS:
+Analyzing common transition patterns...
+
+Top 20 most common auth level transitions:
+   1. Level  1 → Level  2: 11,465 times
+   2. Level  2 → Level  3: 10,854 times
+   3. Level  3 → Level  4: 10,154 times
+   4. Level  4 → Level  5: 8,414 times
+   5. Level  5 → Level  6: 3,312 times
+   6. Level  3 = Level  3: 3,295 times
+   7. Level  6 → Level  7: 2,454 times
+   8. Level  2 = Level  2: 1,936 times
+   9. Level  1 = Level  1: 1,676 times
+  10. Level  7 → Level  8: 1,247 times
+  11. Level  4 = Level  4:   906 times
+  12. Level  8 → Level  9:   774 times
+  13. Level  5 ← Level  1:   635 times
+  14. Level  4 ← Level  1:   589 times
+  15. Level  5 = Level  5:   557 times
+  16. Level  9 → Level 10:   451 times
+  17. Level  6 = Level  6:   377 times
+  18. Level  7 ← Level  1:   274 times
+  19. Level 10 → Level 11:   272 times
+  20. Level  2 ← Level  1:   250 times
+
+================================================================================
+
+10. PROCESS-SPECIFIC STATISTICS:
+Auth level range by process type:
+
+Visa Recommendation                          
+  Auth levels: 1 to 22 | Avg steps per application: 6.4
+Industry Registration                        
+  Auth levels: 1 to 18 | Avg steps per application: 4.1
+New Investment                               
+  Auth levels: 1 to 17 | Avg steps per application: 6.9
+Industry Link                                
+  Auth levels: 1 to 5 | Avg steps per application: 1.4
+Facility Request                             
+  Auth levels: 1 to 9 | Avg steps per application: 4.2
+Technology Transfer Agreement                
+  Auth levels: 1 to 19 | Avg steps per application: 6.4
+Extension of Operation Period                
+  Auth levels: 1 to 7 | Avg steps per application: 1.6
+Post Registration                            
+  Auth levels: 1 to 9 | Avg steps per application: 1.8
+Unit Industry Registration                   
+  Auth levels: 1 to 9 | Avg steps per application: 3.2
+Value Addition Request                       
+  Auth levels: 1 to 4 | Avg steps per application: 1.2
+
+================================================================================
+
+Exploration complete!
